@@ -1,0 +1,304 @@
+// Design Ref: §3 Data Model — Feature-based Modular Architecture (Option C)
+// 14 entities: Client/Dept/Contact/Project/Ticket/StatusHistory/Comment/Attachment/PostponementRequest/CSAT/SLA/User/Team + ProjectAssignment
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+// ========== Enums ==========
+
+enum TicketStatus {
+  REGISTERED
+  ACCEPTED
+  IN_PROGRESS
+  DELAYED
+  COMPLETION_REQUESTED
+  POSTPONEMENT_REQUESTED
+  APPROVED
+  REJECTED
+  CLOSED
+}
+
+enum TicketPriority {
+  LOW
+  MEDIUM
+  HIGH
+  URGENT
+}
+
+enum TicketChannel {
+  ONLINE
+  PHONE
+  EMAIL
+  OTHER
+}
+
+enum UserRole {
+  SYSTEM_ADMIN
+  MANAGER
+  AGENT
+  CUSTOMER
+}
+
+enum ProjectStatus {
+  ACTIVE
+  ON_HOLD
+  COMPLETED
+  CANCELLED
+}
+
+enum PostponementStatus {
+  PENDING
+  APPROVED
+  REJECTED
+}
+
+// ========== Organization ==========
+
+model Client {
+  id           String       @id @default(cuid())
+  name         String
+  contactEmail String
+  contactPhone String?
+  address      String?
+  status       String       @default("ACTIVE")
+  departments  Department[]
+  contacts     Contact[]
+  projects     Project[]
+  createdAt    DateTime     @default(now())
+  updatedAt    DateTime     @updatedAt
+}
+
+model Department {
+  id        String       @id @default(cuid())
+  clientId  String
+  client    Client       @relation(fields: [clientId], references: [id])
+  name      String
+  parentId  String?
+  parent    Department?  @relation("DeptHierarchy", fields: [parentId], references: [id])
+  children  Department[] @relation("DeptHierarchy")
+  contacts  Contact[]
+  createdAt DateTime     @default(now())
+  updatedAt DateTime     @updatedAt
+
+  @@index([clientId])
+}
+
+model Contact {
+  id           String       @id @default(cuid())
+  clientId     String
+  client       Client       @relation(fields: [clientId], references: [id])
+  departmentId String
+  department   Department   @relation(fields: [departmentId], references: [id])
+  userId       String?      @unique
+  user         User?        @relation(fields: [userId], references: [id])
+  name         String
+  email        String
+  phone        String?
+  position     String?
+  tickets      Ticket[]     @relation("TicketRequester")
+  csatRatings  CSATRating[]
+  createdAt    DateTime     @default(now())
+  updatedAt    DateTime     @updatedAt
+
+  @@index([clientId])
+  @@index([departmentId])
+}
+
+// ========== Project ==========
+
+model Project {
+  id          String              @id @default(cuid())
+  clientId    String
+  client      Client              @relation(fields: [clientId], references: [id])
+  name        String
+  description String?
+  startDate   DateTime?
+  endDate     DateTime?
+  status      ProjectStatus       @default(ACTIVE)
+  assignments ProjectAssignment[]
+  tickets     Ticket[]
+  createdAt   DateTime            @default(now())
+  updatedAt   DateTime            @updatedAt
+
+  @@index([clientId])
+}
+
+model ProjectAssignment {
+  id        String   @id @default(cuid())
+  projectId String
+  project   Project  @relation(fields: [projectId], references: [id])
+  agentId   String
+  agent     User     @relation(fields: [agentId], references: [id])
+  role      String   @default("MEMBER")
+  createdAt DateTime @default(now())
+
+  @@unique([projectId, agentId])
+}
+
+// ========== Ticket ==========
+
+model Ticket {
+  id                String               @id @default(cuid())
+  ticketNumber      String               @unique
+  projectId         String
+  project           Project              @relation(fields: [projectId], references: [id])
+  requesterId       String
+  requester         Contact              @relation("TicketRequester", fields: [requesterId], references: [id])
+  registeredById    String
+  registeredBy      User                 @relation("TicketRegisteredBy", fields: [registeredById], references: [id])
+  assigneeId        String?
+  assignee          User?                @relation("TicketAssignee", fields: [assigneeId], references: [id])
+  title             String
+  description       String
+  category          String
+  priority          TicketPriority       @default(MEDIUM)
+  channel           TicketChannel        @default(ONLINE)
+  status            TicketStatus         @default(REGISTERED)
+  requestedDueDate  DateTime
+  plannedDueDate    DateTime?
+  actionPlan        String?
+  acceptedAt        DateTime?
+  acceptedBy        String?
+  isAutoAccepted    Boolean              @default(false)
+  postponementCount Int                  @default(0)
+  closedAt          DateTime?
+  statusHistory     TicketStatusHistory[]
+  comments          Comment[]
+  attachments       Attachment[]         @relation("TicketAttachments")
+  postponement      PostponementRequest?
+  csatRating        CSATRating?
+  createdAt         DateTime             @default(now())
+  updatedAt         DateTime             @updatedAt
+
+  @@index([projectId])
+  @@index([assigneeId])
+  @@index([status])
+  @@index([createdAt])
+}
+
+model TicketStatusHistory {
+  id         String        @id @default(cuid())
+  ticketId   String
+  ticket     Ticket        @relation(fields: [ticketId], references: [id])
+  fromStatus TicketStatus?
+  toStatus   TicketStatus
+  changedBy  String
+  reason     String?
+  duration   Int?
+  createdAt  DateTime      @default(now())
+
+  @@index([ticketId])
+}
+
+// ========== Communication ==========
+
+model Comment {
+  id          String       @id @default(cuid())
+  ticketId    String
+  ticket      Ticket       @relation(fields: [ticketId], references: [id])
+  authorId    String
+  author      User         @relation(fields: [authorId], references: [id])
+  type        String       @default("PUBLIC")
+  content     String
+  attachments Attachment[] @relation("CommentAttachments")
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+
+  @@index([ticketId])
+}
+
+model Attachment {
+  id           String   @id @default(cuid())
+  ticketId     String?
+  ticket       Ticket?  @relation("TicketAttachments", fields: [ticketId], references: [id])
+  commentId    String?
+  comment      Comment? @relation("CommentAttachments", fields: [commentId], references: [id])
+  fileName     String
+  fileSize     Int
+  mimeType     String
+  storageKey   String
+  uploadedById String
+  uploadedBy   User     @relation(fields: [uploadedById], references: [id])
+  createdAt    DateTime @default(now())
+}
+
+// ========== Approval & CSAT ==========
+
+model PostponementRequest {
+  id               String             @id @default(cuid())
+  ticketId         String             @unique
+  ticket           Ticket             @relation(fields: [ticketId], references: [id])
+  requestedById    String
+  requestedBy      User               @relation("PostponementRequester", fields: [requestedById], references: [id])
+  currentDueDate   DateTime
+  requestedDueDate DateTime
+  reason           String
+  status           PostponementStatus @default(PENDING)
+  respondedById    String?
+  respondedBy      User?              @relation("PostponementResponder", fields: [respondedById], references: [id])
+  respondedAt      DateTime?
+  createdAt        DateTime           @default(now())
+}
+
+model CSATRating {
+  id        String   @id @default(cuid())
+  ticketId  String   @unique
+  ticket    Ticket   @relation(fields: [ticketId], references: [id])
+  rating    Int
+  feedback  String?
+  ratedById String
+  ratedBy   Contact  @relation(fields: [ratedById], references: [id])
+  createdAt DateTime @default(now())
+}
+
+// ========== SLA ==========
+
+model SLAPolicy {
+  id              String          @id @default(cuid())
+  name            String
+  category        String?
+  priority        TicketPriority?
+  acceptanceHours Int             @default(4)
+  resolutionHours Int
+  isDefault       Boolean         @default(false)
+  createdAt       DateTime        @default(now())
+  updatedAt       DateTime        @updatedAt
+}
+
+// ========== Users & Teams ==========
+
+model User {
+  id                    String              @id @default(cuid())
+  email                 String              @unique
+  name                  String
+  passwordHash          String?
+  role                  UserRole            @default(CUSTOMER)
+  contactProfile        Contact?
+  teamId                String?
+  team                  Team?               @relation(fields: [teamId], references: [id])
+  isActive              Boolean             @default(true)
+  projectAssignments    ProjectAssignment[]
+  registeredTickets     Ticket[]            @relation("TicketRegisteredBy")
+  assignedTickets       Ticket[]            @relation("TicketAssignee")
+  comments              Comment[]
+  attachments           Attachment[]
+  postponementRequests  PostponementRequest[] @relation("PostponementRequester")
+  postponementResponses PostponementRequest[] @relation("PostponementResponder")
+  createdAt             DateTime            @default(now())
+  updatedAt             DateTime            @updatedAt
+}
+
+model Team {
+  id        String   @id @default(cuid())
+  name      String
+  leaderId  String?
+  members   User[]
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}

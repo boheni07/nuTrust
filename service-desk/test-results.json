@@ -1,0 +1,219 @@
+{
+  "timestamp": "2026-04-08T01:58:20.708Z",
+  "passed": 30,
+  "failed": 0,
+  "total": 30,
+  "rate": "100%",
+  "results": [
+    {
+      "id": "T01",
+      "name": "Admin 로그인",
+      "ok": true,
+      "status": 302,
+      "detail": ""
+    },
+    {
+      "id": "T02",
+      "name": "Manager 로그인",
+      "ok": true,
+      "status": 302,
+      "detail": ""
+    },
+    {
+      "id": "T03",
+      "name": "Agent 로그인",
+      "ok": true,
+      "status": 302,
+      "detail": ""
+    },
+    {
+      "id": "T04",
+      "name": "Customer 로그인",
+      "ok": true,
+      "status": 302,
+      "detail": ""
+    },
+    {
+      "id": "T05",
+      "name": "미인증 → 401",
+      "ok": true,
+      "status": 401,
+      "detail": ""
+    },
+    {
+      "id": "T06",
+      "name": "Customer → /api/teams 403",
+      "ok": true,
+      "status": 403,
+      "detail": ""
+    },
+    {
+      "id": "T07",
+      "name": "GET /api/tickets",
+      "ok": true,
+      "status": 200,
+      "detail": "6건"
+    },
+    {
+      "id": "T08",
+      "name": "POST /api/tickets (등록)",
+      "ok": true,
+      "status": 201,
+      "detail": ""
+    },
+    {
+      "id": "T09",
+      "name": "GET /api/tickets/:id (상세)",
+      "ok": true,
+      "status": 200,
+      "detail": "REGISTERED"
+    },
+    {
+      "id": "T10",
+      "name": "ACCEPT (REGISTERED→IN_PROGRESS)",
+      "ok": true,
+      "status": 200,
+      "detail": ""
+    },
+    {
+      "id": "T11",
+      "name": "상태 확인 → IN_PROGRESS",
+      "ok": true,
+      "status": 200,
+      "detail": "IN_PROGRESS"
+    },
+    {
+      "id": "T12",
+      "name": "COMPLETE (→COMPLETION_REQUESTED)",
+      "ok": true,
+      "status": 200,
+      "detail": ""
+    },
+    {
+      "id": "T13",
+      "name": "APPROVE (→APPROVED)",
+      "ok": true,
+      "status": 200,
+      "detail": ""
+    },
+    {
+      "id": "T14",
+      "name": "CSAT (→CLOSED)",
+      "ok": true,
+      "status": 201,
+      "detail": ""
+    },
+    {
+      "id": "T15",
+      "name": "최종 상태 → CLOSED",
+      "ok": true,
+      "status": 200,
+      "detail": "CLOSED"
+    },
+    {
+      "id": "T16",
+      "name": "정상 연기 1회차 → 200",
+      "ok": true,
+      "status": 200,
+      "detail": ""
+    },
+    {
+      "id": "T17",
+      "name": "2회차 연기 → POSTPONEMENT_LIMIT_EXCEEDED",
+      "ok": true,
+      "status": 400,
+      "detail": "POSTPONEMENT_LIMIT_EXCEEDED"
+    },
+    {
+      "id": "T18",
+      "name": "POST /comments (고객 댓글)",
+      "ok": true,
+      "status": 201,
+      "detail": ""
+    },
+    {
+      "id": "T19",
+      "name": "POST /comments (내부 메모)",
+      "ok": true,
+      "status": 201,
+      "detail": ""
+    },
+    {
+      "id": "T20",
+      "name": "GET /history (상태 이력)",
+      "ok": true,
+      "status": 200,
+      "detail": "4건"
+    },
+    {
+      "id": "T21",
+      "name": "GET /api/clients",
+      "ok": true,
+      "status": 200,
+      "detail": "2건"
+    },
+    {
+      "id": "T22",
+      "name": "GET /api/projects",
+      "ok": true,
+      "status": 200,
+      "detail": "4건"
+    },
+    {
+      "id": "T23",
+      "name": "GET /api/teams",
+      "ok": true,
+      "status": 200,
+      "detail": "3건"
+    },
+    {
+      "id": "T24",
+      "name": "GET /api/users",
+      "ok": true,
+      "status": 200,
+      "detail": "8건"
+    },
+    {
+      "id": "T25",
+      "name": "GET /api/sla-policies",
+      "ok": true,
+      "status": 200,
+      "detail": "3건"
+    },
+    {
+      "id": "T26",
+      "name": "GET /api/dashboard/agent",
+      "ok": true,
+      "status": 200,
+      "detail": ""
+    },
+    {
+      "id": "T27",
+      "name": "GET /api/dashboard/manager",
+      "ok": true,
+      "status": 200,
+      "detail": ""
+    },
+    {
+      "id": "T28",
+      "name": "GET /api/reports/sla",
+      "ok": true,
+      "status": 200,
+      "detail": ""
+    },
+    {
+      "id": "T29",
+      "name": "GET /api/auth/session",
+      "ok": true,
+      "status": 200,
+      "detail": "AGENT"
+    },
+    {
+      "id": "T30",
+      "name": "GET /api/users/me",
+      "ok": true,
+      "status": 200,
+      "detail": "박준호"
+    }
+  ]
+}

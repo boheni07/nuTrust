@@ -1,0 +1,23 @@
+// Re-export Prisma types for domain use
+export type {
+  Client,
+  Department,
+  Contact,
+  Project,
+  ProjectAssignment,
+  Ticket,
+  TicketStatusHistory,
+  Comment,
+  Attachment,
+  PostponementRequest,
+  CSATRating,
+  SLAPolicy,
+  User,
+  Team,
+  TicketStatus,
+  TicketPriority,
+  TicketChannel,
+  UserRole,
+  ProjectStatus,
+  PostponementStatus,
+} from '@prisma/client';

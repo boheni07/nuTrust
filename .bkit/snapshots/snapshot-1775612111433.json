@@ -1,0 +1,1701 @@
+{
+  "timestamp": "2026-04-08T01:35:11.431Z",
+  "reason": "compaction",
+  "status": {
+    "version": "3.0",
+    "lastUpdated": "2026-04-08T01:33:50.205Z",
+    "activeFeatures": [
+      "ticket-machine",
+      "sla",
+      "service-desk",
+      "validations",
+      "domain",
+      "clients",
+      "[id]",
+      "departments",
+      "contacts",
+      "projects",
+      "assignments",
+      "[agentId]",
+      "tickets",
+      "accept",
+      "start",
+      "complete",
+      "assign",
+      "comments",
+      "history",
+      "upload",
+      "postpone",
+      "approve",
+      "reject",
+      "approve-postponement",
+      "reject-postponement",
+      "csat",
+      "ui",
+      "layout",
+      "(portal)",
+      "new",
+      "dashboard",
+      "(agent)",
+      "manager",
+      "teams",
+      "users",
+      "sla-policies",
+      "(admin)",
+      "reports",
+      "cron",
+      "prisma",
+      "signin",
+      "download",
+      "agent",
+      "me",
+      "password",
+      "settings",
+      "admin-users",
+      "admin-teams",
+      "admin-sla",
+      "agent-settings",
+      "approval",
+      "admin-clients",
+      "admin-projects",
+      "04-report",
+      "agent-tickets"
+    ],
+    "primaryFeature": "ticket-machine",
+    "features": {
+      "ticket-machine": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-04-07T13:42:03.923Z",
+          "lastUpdated": "2026-04-07T23:06:28.159Z"
+        },
+        "lastFile": "E:\\Google Drive\\Dev\\nuTrust\\service-desk\\src\\domain\\ticket-machine\\machine.ts"
+      },
+      "sla": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-04-07T13:43:06.820Z",
+          "lastUpdated": "2026-04-07T14:03:58.464Z"
+        },
+        "lastFile": "C:\\CLOUD\\Google_Drive\\Dev\\nuTrust\\service-desk\\src\\app\\api\\reports\\sla\\route.ts"
+      },
+      "service-desk": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-04-07T13:43:17.452Z",
+          "lastUpdated": "2026-04-08T01:33:50.203Z"
+        },
+        "lastFile": "E:\\Google Drive\\Dev\\nuTrust\\service-desk\\test-integration.js",
+        "previousPhase": "check",
+        "autoAdvanced": true
+      },
+      "validations": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-04-07T13:43:46.498Z",
+          "lastUpdated": "2026-04-07T13:47:29.903Z"
+        },
+        "lastFile": "C:\\CLOUD\\Google_Drive\\Dev\\nuTrust\\service-desk\\src\\lib\\validations\\project.ts"
+      },
+      "domain": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-04-07T13:44:12.739Z",
+          "lastUpdated": "2026-04-07T13:44:12.739Z"
+        },
+        "lastFile": "C:\\CLOUD\\Google_Drive\\Dev\\nuTrust\\service-desk\\src\\domain\\models\\index.ts"
+      },
+      "clients": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-04-07T13:47:49.782Z",
+          "lastUpdated": "2026-04-07T15:39:43.015Z"
+        },
+        "lastFile": "C:\\CLOUD\\Google_Drive\\Dev\\nuTrust\\service-desk\\src\\features\\clients\\components\\ClientList.tsx"
+      },
+      "[id]": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-04-07T13:47:58.209Z",
+          "lastUpdated": "2026-04-07T14:19:49.905Z"
+        },
+        "lastFile": "C:\\CLOUD\\Google_Drive\\Dev\\nuTrust\\service-desk\\src\\app\\api\\sla-policies\\[id]\\route.ts"
+      },
+      "departments": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-04-07T13:48:06.072Z",
+          "lastUpdated": "2026-04-07T14:34:19.108Z"
+        },
+        "lastFile": "C:\\CLOUD\\Google_Drive\\Dev\\nuTrust\\service-desk\\src\\app\\api\\clients\\[id]\\departments\\route.ts"
+      },
+      "contacts": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-04-07T13:48:13.314Z",
+          "lastUpdated": "2026-04-07T14:34:32.850Z"
+        },
+        "lastFile": "C:\\CLOUD\\Google_Drive\\Dev\\nuTrust\\service-desk\\src\\app\\api\\clients\\[id]\\contacts\\route.ts"
+      },
+      "projects": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-04-07T13:48:25.202Z",
+          "lastUpdated": "2026-04-07T15:39:55.629Z"
+        },
+        "lastFile": "C:\\CLOUD\\Google_Drive\\Dev\\nuTrust\\service-desk\\src\\features\\projects\\components\\ProjectList.tsx"
+      },
+      "assignments": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-04-07T13:48:44.359Z",
+          "lastUpdated": "2026-04-07T13:48:44.359Z"
+        },
+        "lastFile": "C:\\CLOUD\\Google_Drive\\Dev\\nuTrust\\service-desk\\src\\app\\api\\projects\\[id]\\assignments\\route.ts"
+      },
+      "[agentId]": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-04-07T13:48:51.187Z",
+          "lastUpdated": "2026-04-07T13:48:51.187Z"
+        },
+        "lastFile": "C:\\CLOUD\\Google_Drive\\Dev\\nuTrust\\service-desk\\src\\app\\api\\projects\\[id]\\assignments\\[agentId]\\route.ts"
+      },
+      "tickets": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-04-07T13:50:43.026Z",
+          "lastUpdated": "2026-04-08T00:42:03.281Z"
+        },
+        "lastFile": "E:\\Google Drive\\Dev\\nuTrust\\service-desk\\src\\features\\tickets\\components\\AgentTicketList.tsx"
+      },
+      "accept": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-04-07T13:51:00.295Z",
+          "lastUpdated": "2026-04-07T14:53:05.938Z"
+        },
+        "lastFile": "C:\\CLOUD\\Google_Drive\\Dev\\nuTrust\\service-desk\\src\\app\\api\\tickets\\[id]\\accept\\route.ts"
+      },
+      "start": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-04-07T13:51:07.661Z",
+          "lastUpdated": "2026-04-07T13:51:07.661Z"
+        },
+        "lastFile": "C:\\CLOUD\\Google_Drive\\Dev\\nuTrust\\service-desk\\src\\app\\api\\tickets\\[id]\\start\\route.ts"
+      },
+      "complete": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-04-07T13:51:14.513Z",
+          "lastUpdated": "2026-04-07T13:51:14.513Z"
+        },
+        "lastFile": "C:\\CLOUD\\Google_Drive\\Dev\\nuTrust\\service-desk\\src\\app\\api\\tickets\\[id]\\complete\\route.ts"
+      },
+      "assign": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-04-07T13:51:25.633Z",
+          "lastUpdated": "2026-04-07T13:51:25.633Z"
+        },
+        "lastFile": "C:\\CLOUD\\Google_Drive\\Dev\\nuTrust\\service-desk\\src\\app\\api\\tickets\\[id]\\assign\\route.ts"
+      },
+      "comments": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-04-07T13:51:36.662Z",
+          "lastUpdated": "2026-04-07T13:51:36.662Z"
+        },
+        "lastFile": "C:\\CLOUD\\Google_Drive\\Dev\\nuTrust\\service-desk\\src\\app\\api\\tickets\\[id]\\comments\\route.ts"
+      },
+      "history": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-04-07T13:51:43.827Z",
+          "lastUpdated": "2026-04-07T13:51:43.827Z"
+        },
+        "lastFile": "C:\\CLOUD\\Google_Drive\\Dev\\nuTrust\\service-desk\\src\\app\\api\\tickets\\[id]\\history\\route.ts"
+      },
+      "upload": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-04-07T13:51:56.521Z",
+          "lastUpdated": "2026-04-07T13:51:56.521Z"
+        },
+        "lastFile": "C:\\CLOUD\\Google_Drive\\Dev\\nuTrust\\service-desk\\src\\app\\api\\upload\\route.ts"
+      },
+      "postpone": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-04-07T13:53:18.731Z",
+          "lastUpdated": "2026-04-07T13:53:18.731Z"
+        },
+        "lastFile": "C:\\CLOUD\\Google_Drive\\Dev\\nuTrust\\service-desk\\src\\app\\api\\tickets\\[id]\\postpone\\route.ts"
+      },
+      "approve": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-04-07T13:53:49.180Z",
+          "lastUpdated": "2026-04-07T13:53:49.180Z"
+        },
+        "lastFile": "C:\\CLOUD\\Google_Drive\\Dev\\nuTrust\\service-desk\\src\\app\\api\\tickets\\[id]\\approve\\route.ts"
+      },
+      "reject": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-04-07T13:54:01.647Z",
+          "lastUpdated": "2026-04-07T13:54:01.647Z"
+        },
+        "lastFile": "C:\\CLOUD\\Google_Drive\\Dev\\nuTrust\\service-desk\\src\\app\\api\\tickets\\[id]\\reject\\route.ts"
+      },
+      "approve-postponement": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-04-07T13:54:18.945Z",
+          "lastUpdated": "2026-04-07T13:54:18.945Z"
+        },
+        "lastFile": "C:\\CLOUD\\Google_Drive\\Dev\\nuTrust\\service-desk\\src\\app\\api\\tickets\\[id]\\approve-postponement\\route.ts"
+      },
+      "reject-postponement": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-04-07T13:54:30.262Z",
+          "lastUpdated": "2026-04-07T13:54:30.263Z"
+        },
+        "lastFile": "C:\\CLOUD\\Google_Drive\\Dev\\nuTrust\\service-desk\\src\\app\\api\\tickets\\[id]\\reject-postponement\\route.ts"
+      },
+      "csat": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-04-07T13:54:41.254Z",
+          "lastUpdated": "2026-04-07T15:39:31.952Z"
+        },
+        "lastFile": "C:\\CLOUD\\Google_Drive\\Dev\\nuTrust\\service-desk\\src\\features\\csat\\components\\CSATForm.tsx"
+      },
+      "ui": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-04-07T13:56:16.453Z",
+          "lastUpdated": "2026-04-07T13:56:38.800Z"
+        },
+        "lastFile": "C:\\CLOUD\\Google_Drive\\Dev\\nuTrust\\service-desk\\src\\components\\ui\\Input.tsx"
+      },
+      "layout": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-04-07T13:56:54.583Z",
+          "lastUpdated": "2026-04-07T15:30:58.103Z"
+        },
+        "lastFile": "C:\\CLOUD\\Google_Drive\\Dev\\nuTrust\\service-desk\\src\\components\\layout\\Sidebar.tsx"
+      },
+      "(portal)": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-04-07T13:57:07.482Z",
+          "lastUpdated": "2026-04-07T13:57:07.482Z"
+        },
+        "lastFile": "C:\\CLOUD\\Google_Drive\\Dev\\nuTrust\\service-desk\\src\\app\\(portal)\\layout.tsx"
+      },
+      "new": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-04-07T13:58:45.771Z",
+          "lastUpdated": "2026-04-07T13:58:45.771Z"
+        },
+        "lastFile": "C:\\CLOUD\\Google_Drive\\Dev\\nuTrust\\service-desk\\src\\app\\(portal)\\tickets\\new\\page.tsx"
+      },
+      "dashboard": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-04-07T13:59:00.613Z",
+          "lastUpdated": "2026-04-07T15:38:47.969Z"
+        },
+        "lastFile": "C:\\CLOUD\\Google_Drive\\Dev\\nuTrust\\service-desk\\src\\features\\dashboard\\components\\ManagerDashboard.tsx"
+      },
+      "(agent)": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-04-07T14:01:04.370Z",
+          "lastUpdated": "2026-04-07T14:01:04.370Z"
+        },
+        "lastFile": "C:\\CLOUD\\Google_Drive\\Dev\\nuTrust\\service-desk\\src\\app\\(agent)\\layout.tsx"
+      },
+      "manager": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-04-07T14:03:45.758Z",
+          "lastUpdated": "2026-04-07T15:38:16.807Z"
+        },
+        "lastFile": "C:\\CLOUD\\Google_Drive\\Dev\\nuTrust\\service-desk\\src\\app\\api\\dashboard\\manager\\route.ts"
+      },
+      "teams": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-04-07T14:04:06.304Z",
+          "lastUpdated": "2026-04-07T14:04:06.304Z"
+        },
+        "lastFile": "C:\\CLOUD\\Google_Drive\\Dev\\nuTrust\\service-desk\\src\\app\\api\\teams\\route.ts"
+      },
+      "users": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-04-07T14:04:17.469Z",
+          "lastUpdated": "2026-04-07T14:04:17.469Z"
+        },
+        "lastFile": "C:\\CLOUD\\Google_Drive\\Dev\\nuTrust\\service-desk\\src\\app\\api\\users\\route.ts"
+      },
+      "sla-policies": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-04-07T14:04:26.138Z",
+          "lastUpdated": "2026-04-07T14:04:26.138Z"
+        },
+        "lastFile": "C:\\CLOUD\\Google_Drive\\Dev\\nuTrust\\service-desk\\src\\app\\api\\sla-policies\\route.ts"
+      },
+      "(admin)": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-04-07T14:04:32.364Z",
+          "lastUpdated": "2026-04-07T14:04:32.364Z"
+        },
+        "lastFile": "C:\\CLOUD\\Google_Drive\\Dev\\nuTrust\\service-desk\\src\\app\\(admin)\\layout.tsx"
+      },
+      "reports": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-04-07T14:05:39.044Z",
+          "lastUpdated": "2026-04-07T14:05:39.044Z"
+        },
+        "lastFile": "C:\\CLOUD\\Google_Drive\\Dev\\nuTrust\\service-desk\\src\\app\\(admin)\\reports\\page.tsx"
+      },
+      "cron": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-04-07T14:07:48.044Z",
+          "lastUpdated": "2026-04-07T14:07:48.044Z"
+        },
+        "lastFile": "C:\\CLOUD\\Google_Drive\\Dev\\nuTrust\\service-desk\\src\\app\\api\\cron\\route.ts"
+      },
+      "prisma": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-04-07T14:08:26.151Z",
+          "lastUpdated": "2026-04-07T14:42:34.193Z"
+        },
+        "lastFile": "C:\\CLOUD\\Google_Drive\\Dev\\nuTrust\\service-desk\\prisma\\seed-full.ts"
+      },
+      "signin": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-04-07T14:45:44.748Z",
+          "lastUpdated": "2026-04-08T00:44:02.654Z"
+        },
+        "lastFile": "E:\\Google Drive\\Dev\\nuTrust\\service-desk\\src\\app\\auth\\signin\\page.tsx"
+      },
+      "download": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-04-07T15:08:07.125Z",
+          "lastUpdated": "2026-04-07T15:08:07.125Z"
+        },
+        "lastFile": "C:\\CLOUD\\Google_Drive\\Dev\\nuTrust\\service-desk\\src\\app\\api\\attachments\\[id]\\download\\route.ts"
+      },
+      "agent": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-04-07T15:14:16.317Z",
+          "lastUpdated": "2026-04-07T15:14:16.317Z"
+        },
+        "lastFile": "C:\\CLOUD\\Google_Drive\\Dev\\nuTrust\\service-desk\\src\\app\\api\\dashboard\\agent\\route.ts"
+      },
+      "me": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-04-07T15:18:16.966Z",
+          "lastUpdated": "2026-04-07T15:18:16.966Z"
+        },
+        "lastFile": "C:\\CLOUD\\Google_Drive\\Dev\\nuTrust\\service-desk\\src\\app\\api\\users\\me\\route.ts"
+      },
+      "password": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-04-07T15:18:27.476Z",
+          "lastUpdated": "2026-04-07T15:18:27.476Z"
+        },
+        "lastFile": "C:\\CLOUD\\Google_Drive\\Dev\\nuTrust\\service-desk\\src\\app\\api\\users\\me\\password\\route.ts"
+      },
+      "settings": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-04-07T15:19:02.899Z",
+          "lastUpdated": "2026-04-07T15:19:02.899Z"
+        },
+        "lastFile": "C:\\CLOUD\\Google_Drive\\Dev\\nuTrust\\service-desk\\src\\app\\(portal)\\settings\\page.tsx"
+      },
+      "admin-users": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-04-07T15:19:32.754Z",
+          "lastUpdated": "2026-04-07T15:19:32.754Z"
+        },
+        "lastFile": "C:\\CLOUD\\Google_Drive\\Dev\\nuTrust\\service-desk\\src\\app\\(admin)\\admin-users\\page.tsx"
+      },
+      "admin-teams": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-04-07T15:19:54.683Z",
+          "lastUpdated": "2026-04-07T15:19:54.683Z"
+        },
+        "lastFile": "C:\\CLOUD\\Google_Drive\\Dev\\nuTrust\\service-desk\\src\\app\\(admin)\\admin-teams\\page.tsx"
+      },
+      "admin-sla": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-04-07T15:20:35.845Z",
+          "lastUpdated": "2026-04-07T15:20:35.845Z"
+        },
+        "lastFile": "C:\\CLOUD\\Google_Drive\\Dev\\nuTrust\\service-desk\\src\\app\\(admin)\\admin-sla\\page.tsx"
+      },
+      "agent-settings": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-04-07T15:30:13.885Z",
+          "lastUpdated": "2026-04-07T15:30:13.885Z"
+        },
+        "lastFile": "C:\\CLOUD\\Google_Drive\\Dev\\nuTrust\\service-desk\\src\\app\\(agent)\\agent-settings\\page.tsx"
+      },
+      "approval": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-04-07T15:39:16.697Z",
+          "lastUpdated": "2026-04-07T15:39:16.697Z"
+        },
+        "lastFile": "C:\\CLOUD\\Google_Drive\\Dev\\nuTrust\\service-desk\\src\\features\\approval\\components\\ApprovalPanel.tsx"
+      },
+      "admin-clients": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-04-07T15:40:11.648Z",
+          "lastUpdated": "2026-04-07T15:40:11.648Z"
+        },
+        "lastFile": "C:\\CLOUD\\Google_Drive\\Dev\\nuTrust\\service-desk\\src\\app\\(admin)\\admin-clients\\page.tsx"
+      },
+      "admin-projects": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-04-07T15:40:21.844Z",
+          "lastUpdated": "2026-04-07T15:40:21.844Z"
+        },
+        "lastFile": "C:\\CLOUD\\Google_Drive\\Dev\\nuTrust\\service-desk\\src\\app\\(admin)\\admin-projects\\page.tsx"
+      },
+      "04-report": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-04-08T00:08:01.417Z",
+          "lastUpdated": "2026-04-08T00:08:13.907Z"
+        },
+        "lastFile": "E:\\Google Drive\\Dev\\nuTrust\\docs\\04-report\\generate_ppt.py"
+      },
+      "agent-tickets": {
+        "phase": "do",
+        "phaseNumber": 3,
+        "matchRate": null,
+        "iterationCount": 0,
+        "requirements": [],
+        "documents": {},
+        "timestamps": {
+          "started": "2026-04-08T00:42:16.609Z",
+          "lastUpdated": "2026-04-08T00:42:16.609Z"
+        },
+        "lastFile": "E:\\Google Drive\\Dev\\nuTrust\\service-desk\\src\\app\\(agent)\\agent-tickets\\page.tsx"
+      }
+    },
+    "pipeline": {
+      "currentPhase": 1,
+      "level": "Dynamic",
+      "phaseHistory": []
+    },
+    "session": {
+      "startedAt": "2026-04-07T12:33:07.056Z",
+      "onboardingCompleted": false,
+      "lastActivity": "2026-04-08T01:33:50.205Z"
+    },
+    "history": [
+      {
+        "timestamp": "2026-04-07T13:42:03.927Z",
+        "feature": "ticket-machine",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T13:42:17.733Z",
+        "feature": "ticket-machine",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T13:42:40.692Z",
+        "feature": "ticket-machine",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T13:42:46.680Z",
+        "feature": "ticket-machine",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T13:43:06.824Z",
+        "feature": "sla",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T13:43:11.680Z",
+        "feature": "sla",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T13:43:17.454Z",
+        "feature": "service-desk",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T13:43:24.952Z",
+        "feature": "service-desk",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T13:43:31.271Z",
+        "feature": "service-desk",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T13:43:46.502Z",
+        "feature": "validations",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T13:43:57.849Z",
+        "feature": "service-desk",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T13:44:12.742Z",
+        "feature": "domain",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T13:45:56.445Z",
+        "feature": "ticket-machine",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T13:47:22.937Z",
+        "feature": "validations",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T13:47:29.907Z",
+        "feature": "validations",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T13:47:40.406Z",
+        "feature": "service-desk",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T13:47:49.785Z",
+        "feature": "clients",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T13:47:58.212Z",
+        "feature": "[id]",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T13:48:06.074Z",
+        "feature": "departments",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T13:48:13.320Z",
+        "feature": "contacts",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T13:48:25.205Z",
+        "feature": "projects",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T13:48:36.097Z",
+        "feature": "[id]",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T13:48:44.363Z",
+        "feature": "assignments",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T13:48:51.189Z",
+        "feature": "[agentId]",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T13:50:24.605Z",
+        "feature": "service-desk",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T13:50:43.029Z",
+        "feature": "tickets",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T13:50:52.283Z",
+        "feature": "[id]",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T13:51:00.299Z",
+        "feature": "accept",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T13:51:07.663Z",
+        "feature": "start",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T13:51:14.516Z",
+        "feature": "complete",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T13:51:25.637Z",
+        "feature": "assign",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T13:51:36.665Z",
+        "feature": "comments",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T13:51:43.830Z",
+        "feature": "history",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T13:51:56.523Z",
+        "feature": "upload",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T13:53:18.734Z",
+        "feature": "postpone",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T13:53:49.183Z",
+        "feature": "approve",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T13:54:01.650Z",
+        "feature": "reject",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T13:54:18.948Z",
+        "feature": "approve-postponement",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T13:54:30.265Z",
+        "feature": "reject-postponement",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T13:54:41.258Z",
+        "feature": "csat",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T13:54:51.874Z",
+        "feature": "csat",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T13:56:05.691Z",
+        "feature": "service-desk",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T13:56:16.461Z",
+        "feature": "ui",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T13:56:25.630Z",
+        "feature": "ui",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T13:56:38.805Z",
+        "feature": "ui",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T13:56:54.585Z",
+        "feature": "layout",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T13:57:01.352Z",
+        "feature": "layout",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T13:57:07.484Z",
+        "feature": "(portal)",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T13:57:17.996Z",
+        "feature": "tickets",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T13:57:42.519Z",
+        "feature": "tickets",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T13:57:59.212Z",
+        "feature": "tickets",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T13:58:35.753Z",
+        "feature": "tickets",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T13:58:40.876Z",
+        "feature": "tickets",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T13:58:45.775Z",
+        "feature": "new",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T13:58:50.751Z",
+        "feature": "[id]",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T13:59:00.616Z",
+        "feature": "dashboard",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T13:59:06.398Z",
+        "feature": "service-desk",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T13:59:22.773Z",
+        "feature": "service-desk",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T13:59:52.841Z",
+        "feature": "tickets",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T14:01:04.373Z",
+        "feature": "(agent)",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T14:01:45.574Z",
+        "feature": "dashboard",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T14:02:18.485Z",
+        "feature": "tickets",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T14:02:24.938Z",
+        "feature": "dashboard",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T14:02:30.281Z",
+        "feature": "[id]",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T14:03:45.763Z",
+        "feature": "manager",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T14:03:58.466Z",
+        "feature": "sla",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T14:04:06.307Z",
+        "feature": "teams",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T14:04:17.472Z",
+        "feature": "users",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T14:04:26.142Z",
+        "feature": "sla-policies",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T14:04:32.369Z",
+        "feature": "(admin)",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T14:04:52.722Z",
+        "feature": "dashboard",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T14:04:57.943Z",
+        "feature": "dashboard",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T14:05:10.284Z",
+        "feature": "clients",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T14:05:21.660Z",
+        "feature": "projects",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T14:05:39.048Z",
+        "feature": "reports",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T14:07:27.755Z",
+        "feature": "service-desk",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T14:07:48.048Z",
+        "feature": "cron",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T14:08:26.154Z",
+        "feature": "prisma",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T14:08:39.616Z",
+        "feature": "service-desk",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T14:18:03.007Z",
+        "feature": "service-desk",
+        "phase": "act",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T14:18:34.696Z",
+        "feature": "tickets",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T14:18:45.839Z",
+        "feature": "tickets",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T14:19:21.988Z",
+        "feature": "tickets",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T14:19:35.795Z",
+        "feature": "[id]",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T14:19:49.912Z",
+        "feature": "[id]",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T14:34:05.374Z",
+        "feature": "departments",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T14:34:19.110Z",
+        "feature": "departments",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T14:34:32.853Z",
+        "feature": "contacts",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T14:36:33.255Z",
+        "feature": "layout",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T14:42:34.201Z",
+        "feature": "prisma",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T14:45:44.750Z",
+        "feature": "signin",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T14:45:56.767Z",
+        "feature": "service-desk",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T14:46:08.838Z",
+        "feature": "service-desk",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T14:53:05.942Z",
+        "feature": "accept",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T14:53:29.845Z",
+        "feature": "tickets",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T14:53:41.091Z",
+        "feature": "dashboard",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T14:53:47.194Z",
+        "feature": "dashboard",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T14:53:59.944Z",
+        "feature": "dashboard",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T14:54:16.002Z",
+        "feature": "tickets",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T14:54:22.438Z",
+        "feature": "dashboard",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T14:54:36.442Z",
+        "feature": "signin",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T14:54:41.758Z",
+        "feature": "signin",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T14:54:58.569Z",
+        "feature": "tickets",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T14:55:16.825Z",
+        "feature": "service-desk",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T14:55:24.657Z",
+        "feature": "service-desk",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T15:00:45.432Z",
+        "feature": "service-desk",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T15:07:43.055Z",
+        "feature": "layout",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T15:08:07.129Z",
+        "feature": "download",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T15:09:15.121Z",
+        "feature": "tickets",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T15:10:09.156Z",
+        "feature": "tickets",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T15:13:50.122Z",
+        "feature": "dashboard",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T15:14:16.321Z",
+        "feature": "agent",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T15:15:01.604Z",
+        "feature": "dashboard",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T15:15:38.686Z",
+        "feature": "dashboard",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T15:18:16.970Z",
+        "feature": "me",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T15:18:27.479Z",
+        "feature": "password",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T15:19:02.912Z",
+        "feature": "settings",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T15:19:32.758Z",
+        "feature": "admin-users",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T15:19:54.684Z",
+        "feature": "admin-teams",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T15:20:35.850Z",
+        "feature": "admin-sla",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T15:20:54.350Z",
+        "feature": "layout",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T15:28:44.767Z",
+        "feature": "service-desk",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T15:29:03.834Z",
+        "feature": "layout",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T15:30:13.888Z",
+        "feature": "agent-settings",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T15:30:38.579Z",
+        "feature": "layout",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T15:30:44.279Z",
+        "feature": "layout",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T15:30:58.105Z",
+        "feature": "layout",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T15:37:42.114Z",
+        "feature": "tickets",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T15:37:54.861Z",
+        "feature": "tickets",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T15:38:16.810Z",
+        "feature": "manager",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T15:38:41.790Z",
+        "feature": "dashboard",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T15:38:47.972Z",
+        "feature": "dashboard",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T15:39:16.701Z",
+        "feature": "approval",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T15:39:31.955Z",
+        "feature": "csat",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T15:39:43.017Z",
+        "feature": "clients",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T15:39:55.632Z",
+        "feature": "projects",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T15:40:11.651Z",
+        "feature": "admin-clients",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T15:40:21.846Z",
+        "feature": "admin-projects",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-07T23:06:28.161Z",
+        "feature": "ticket-machine",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-08T00:08:01.419Z",
+        "feature": "04-report",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-08T00:08:13.908Z",
+        "feature": "04-report",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-08T00:42:03.283Z",
+        "feature": "tickets",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-08T00:42:16.611Z",
+        "feature": "agent-tickets",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-08T00:44:02.656Z",
+        "feature": "signin",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-08T00:49:06.780Z",
+        "feature": "service-desk",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-08T00:52:57.188Z",
+        "feature": "service-desk",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-08T01:30:18.801Z",
+        "feature": "service-desk",
+        "phase": "do",
+        "action": "updated"
+      },
+      {
+        "timestamp": "2026-04-08T01:33:50.204Z",
+        "feature": "service-desk",
+        "phase": "do",
+        "action": "updated"
+      }
+    ],
+    "stateMachine": {
+      "defaultWorkflow": "default",
+      "activeWorkflows": {},
+      "totalTransitions": 0
+    },
+    "automation": {
+      "globalLevel": 2,
+      "trustScore": 40,
+      "pendingApprovals": 0,
+      "lastGateResult": null
+    },
+    "team": {
+      "enabled": true,
+      "stateFile": ".bkit/runtime/agent-state.json",
+      "eventsFile": ".bkit/runtime/agent-events.jsonl"
+    }
+  }
+}
